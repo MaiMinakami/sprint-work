@@ -1,0 +1,45 @@
+.navigation{
+
+	&__item{		
+		color: $colorWhite;
+		font-size: 18px;
+		font-weight: 600;
+		text-transform: uppercase;
+		list-style: none;
+		width: 114px;
+		display: inline-flex;
+		height: 100px;
+		align-items: center;
+		justify-content: center;
+
+		a {
+			text-decoration: none;
+			color:white;
+		}
+	}
+}
+
+.navigation__item--active{
+	background: rgba(22,22,22,0.9);
+
+	a {
+	color: $colorMainGreen;
+	}
+}
+
+@media  screen and (max-width:980px) {
+	nav {
+		flex:100%;
+	};
+	.navigation {
+		width:100%;
+		flex:1;
+		display:none;
+	}
+
+	.navigation__item {
+		width: 100%;
+		border-bottom: 1px solid #2f2f2f;
+		height: 75px;
+	}
+}

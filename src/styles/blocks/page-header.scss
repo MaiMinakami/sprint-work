@@ -1,0 +1,44 @@
+.page-header{
+		background:$colorBlack;  
+		width: 100%;		
+
+    &__container {
+		max-width: 1145px;
+    	margin: auto;
+		display:flex;
+	    flex-wrap: wrap;
+    	justify-content: space-between;
+    }
+
+    &__menu-icon {
+    	display: none;
+    	width: 30px;
+		height: 28px;
+    	position:absolute;
+		top:50px;
+		right: 50px;
+		background:url(../images/menu_icon.png)0 0 no-repeat;
+		content:"";
+		background-position: -27px 0;
+			&:hover {
+			    	background-position: 3px 0;
+			}
+    }
+}
+
+
+@media  screen and (max-width:980px) {
+	.page-header__menu-icon{
+		display: block;
+		width: 30px;
+		height: 28px;		
+    }
+}
+
+
+	
+.sticky {
+		position:fixed;
+		z-index: 9999999;
+		background: rgba(22,22,22,1);
+}
